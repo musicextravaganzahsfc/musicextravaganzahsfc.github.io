@@ -1,14 +1,85 @@
 body {
+    margin: 0;
+    padding: 0;
     background: fixed;
     background-color: darkblue;
     color: white;
+
+    display: flex;
+    justify-content: center;
+
+    /* -ms-overflow-style: none;  /* IE and Edge
+    scrollbar-width: none; */
 }
 
-#container {
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-snap-type: mandatory;
+}
+
+.container {
+    min-height: 100vh;
+    height: 300vh;
+    width: 100vw;
+
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.01);
+
+    background-attachment: fixed;
+    flex-direction: column;
+
+    scroll-snap-type: y mandatory;
+}
+
+.container div {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+
     display: flex;
-    margin: 5em;
-    background-color: black;
-    border: white solid 5px;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: start;
+    position: relative;
+}
+
+#page1 {
+    background-color: rgba(207, 207, 0, 0.267);
+}
+
+#page2 {
+    background-color: rgba(110, 0, 0, 0.719);
+}
+
+#content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content_container div {
+    height: 10em; 
+    
+    padding: 10em;
+    margin: 2em;
+    
+    border: solid white 0.5em;
+    border-radius: 1em;
+}
+
+#page3 {
+    background-color: rgba(0, 177, 24, 0.397);
+}
+
+#contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
