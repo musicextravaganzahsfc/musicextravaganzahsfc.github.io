@@ -76,11 +76,11 @@ body::-webkit-scrollbar {
     padding: 1em;
     margin: 2em;
     
-    border: solid white 0.5em;
+    border: transparent rgba(255, 255, 255, 0.116) 0.5em;
     border-radius: 1em;
 
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.116);
 
     font-family: "Great Vibes", cursive;
     font-weight: 100;
