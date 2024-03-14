@@ -29,7 +29,18 @@ body::-webkit-scrollbar {
     align-items: center;
 
     background: rgb(2,0,36);
-    background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(0,212,255,1) 100%);
+    background: 
+        linear-gradient(
+            145deg, 
+            rgba(2,0,36,1) 25%,
+            rgb(0,17,112) 25%,
+
+            rgb(0, 17, 112) 50%,
+            rgb(14, 74, 163) 50%,
+
+            rgb(14, 74, 163) 75%,
+            rgba(0,212,255,1) 75%
+        );
  
 
     background-attachment: fixed;
@@ -81,16 +92,9 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 900px) {
     #content_container div {
-        font-size: medium;
-    }
-}
-
-@media screen and (max-height: 900px) {
-    #content_container div {
-        max-height: 15em;
+        max-height: 25em;
         height: auto;
-
-        font-size: medium;
+        font-size: 70%;
     }
 }
 
