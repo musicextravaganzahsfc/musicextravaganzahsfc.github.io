@@ -6,11 +6,14 @@ body {
     background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(0,212,255,1) 100%);
     color: white;
 
+    display: -webkit-box; /* Safari, iOS Safari */
+    display: -moz-box; /* Firefox */
+    display: -ms-flexbox; /* Internet Explorer */
     display: flex;
+    -webkit-box-pack: center; /* Safari, iOS Safari */
+    -moz-box-pack: center; /* Firefox */
+    -ms-flex-pack: center; /* Internet Explorer */
     justify-content: center;
-
-    /* -ms-overflow-style: none;  /* IE and Edge
-    scrollbar-width: none; */
 
     overflow-x: hidden;
 }
@@ -24,8 +27,19 @@ body::-webkit-scrollbar {
     height: 300vh;
     width: 100vw;
 
-    display: flex;    
+    position: absolute;
+
+    display: -webkit-box; /* Safari, iOS Safari */
+    display: -moz-box; /* Firefox */
+    display: -ms-flexbox; /* Internet Explorer */
+    display: flex;
+    -webkit-box-pack: center; /* Safari, iOS Safari */
+    -moz-box-pack: center; /* Firefox */
+    -ms-flex-pack: center; /* Internet Explorer */
     justify-content: center;
+    -webkit-box-align: center; /* Safari, iOS Safari */
+    -moz-box-align: center; /* Firefox */
+    -ms-flex-align: center; /* Internet Explorer */
     align-items: center;
 
     background: rgb(2,0,36);
@@ -34,14 +48,11 @@ body::-webkit-scrollbar {
             145deg, 
             rgba(2,0,36,1) 25%,
             rgb(0,17,112) 25%,
-
             rgb(0, 17, 112) 50%,
             rgb(14, 74, 163) 50%,
-
             rgb(14, 74, 163) 75%,
             rgba(0,212,255,1) 75%
         );
- 
 
     background-attachment: fixed;
     flex-direction: column;
@@ -51,22 +62,32 @@ body::-webkit-scrollbar {
     height: 100vh;
     width: 100vw;
 
+    display: -webkit-box; /* Safari, iOS Safari */
+    display: -moz-box; /* Firefox */
+    display: -ms-flexbox; /* Internet Explorer */
     display: flex;
+    -webkit-box-pack: center; /* Safari, iOS Safari */
+    -moz-box-pack: center; /* Firefox */
+    -ms-flex-pack: center; /* Internet Explorer */
     justify-content: center;
+    -webkit-box-align: center; /* Safari, iOS Safari */
+    -moz-box-align: center; /* Firefox */
+    -ms-flex-align: center; /* Internet Explorer */
     align-items: center;
 }
 
-/* #page1 {
-    background-color: rgba(207, 207, 0, 0.267);
-} */
-
-/* #page2 {
-    background-color: rgba(110, 0, 0, 0.719);
-} */
-
 #content_container {
+    display: -webkit-box; /* Safari, iOS Safari */
+    display: -moz-box; /* Firefox */
+    display: -ms-flexbox; /* Internet Explorer */
     display: flex;
+    -webkit-box-pack: center; /* Safari, iOS Safari */
+    -moz-box-pack: center; /* Firefox */
+    -ms-flex-pack: center; /* Internet Explorer */
     justify-content: center;
+    -webkit-box-align: center; /* Safari, iOS Safari */
+    -moz-box-align: center; /* Firefox */
+    -ms-flex-align: center; /* Internet Explorer */
     align-items: center;
 }
 
@@ -79,7 +100,7 @@ body::-webkit-scrollbar {
     border: transparent rgba(255, 255, 255, 0.116) 0.5em;
     border-radius: 1em;
 
-    color: black;
+    color: white;
     background-color: rgba(255, 255, 255, 0.116);
 
     font-family: "Great Vibes", cursive;
@@ -87,13 +108,20 @@ body::-webkit-scrollbar {
     font-style: normal;
     font-size: x-large;
 
+    -webkit-filter: drop-shadow(0px 0px 14px #000000); /* Safari, iOS Safari */
     filter: drop-shadow(0px 0px 14px #000000);
 }
 
 @media screen and (max-width: 900px) {
+    #content_container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
     #content_container div {
-        max-height: 25em;
-        height: auto;
+        height: 40%;
+        width: 80vw;
         font-size: 70%;
     }
 }
