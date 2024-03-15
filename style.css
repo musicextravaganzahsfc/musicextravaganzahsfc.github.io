@@ -1,141 +1,167 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: fixed;
-    background: rgb(2,0,36);
-    background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(0,212,255,1) 100%);
-    color: white;
+  margin: 0;
+  padding: 0;
+  background: fixed;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    145deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 42%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
 
-    display: -webkit-box; /* Safari, iOS Safari */
-    display: -moz-box; /* Firefox */
-    display: -ms-flexbox; /* Internet Explorer */
-    display: flex;
-    -webkit-box-pack: center; /* Safari, iOS Safari */
-    -moz-box-pack: center; /* Firefox */
-    -ms-flex-pack: center; /* Internet Explorer */
-    justify-content: center;
+  height: 300vh;
 
-    overflow-x: hidden;
+  display: -webkit-box; /* Safari, iOS Safari */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  -webkit-box-pack: center; /* Safari, iOS Safari */
+  -moz-box-pack: center; /* Firefox */
+  -ms-flex-pack: center; /* Internet Explorer */
+  justify-content: center;
+
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+#page1 {
+  display: -webkit-box;
+  display: -mox-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-direction: column;
+}
+
+#title_banner {
+  font-family: "Great Vibes", cursive;
+  color: #ff4141ff;
+  font-size: 9vw;
+}
+
+#more {
+  font-family: "Great Vibes", cursive;
+  color: #ff4141ff;
+  font-size: 2vw;
 }
 
 .container {
-    min-height: 100vh;
-    height: 300vh;
-    width: 100vw;
+  min-height: 100vh;
+  height: 300vh;
+  width: 100vw;
 
-    position: absolute;
+  position: absolute;
 
-    display: -webkit-box; /* Safari, iOS Safari */
-    display: -moz-box; /* Firefox */
-    display: -ms-flexbox; /* Internet Explorer */
-    display: flex;
-    -webkit-box-pack: center; /* Safari, iOS Safari */
-    -moz-box-pack: center; /* Firefox */
-    -ms-flex-pack: center; /* Internet Explorer */
-    justify-content: center;
-    -webkit-box-align: center; /* Safari, iOS Safari */
-    -moz-box-align: center; /* Firefox */
-    -ms-flex-align: center; /* Internet Explorer */
-    align-items: center;
+  display: -webkit-box; /* Safari, iOS Safari */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  -webkit-box-pack: center; /* Safari, iOS Safari */
+  -moz-box-pack: center; /* Firefox */
+  -ms-flex-pack: center; /* Internet Explorer */
+  justify-content: center;
+  -webkit-box-align: center; /* Safari, iOS Safari */
+  -moz-box-align: center; /* Firefox */
+  -ms-flex-align: center; /* Internet Explorer */
+  align-items: center;
 
-    background: rgb(2,0,36);
-    background:
-        linear-gradient(
-            145deg, 
-            rgba(2,0,36,1) 25%,
-            rgb(0,17,112) 25%,
-            rgb(0, 17, 112) 50%,
-            rgb(14, 74, 163) 50%,
-            rgb(14, 74, 163) 75%,
-            rgba(0,212,255,1) 75%
-        );
+  flex-direction: column;
+}
 
-    background-attachment: fixed;
-    flex-direction: column;
+#starry_background {
+  position: fixed;
+  z-index: -1;
+
+  height: 300%;
+  width: auto;
 }
 
 .container div {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    display: -webkit-box; /* Safari, iOS Safari */
-    display: -moz-box; /* Firefox */
-    display: -ms-flexbox; /* Internet Explorer */
-    display: flex;
-    -webkit-box-pack: center; /* Safari, iOS Safari */
-    -moz-box-pack: center; /* Firefox */
-    -ms-flex-pack: center; /* Internet Explorer */
-    justify-content: center;
-    -webkit-box-align: center; /* Safari, iOS Safari */
-    -moz-box-align: center; /* Firefox */
-    -ms-flex-align: center; /* Internet Explorer */
-    align-items: center;
+  display: -webkit-box; /* Safari, iOS Safari */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  -webkit-box-pack: center; /* Safari, iOS Safari */
+  -moz-box-pack: center; /* Firefox */
+  -ms-flex-pack: center; /* Internet Explorer */
+  justify-content: center;
+  -webkit-box-align: center; /* Safari, iOS Safari */
+  -moz-box-align: center; /* Firefox */
+  -ms-flex-align: center; /* Internet Explorer */
+  align-items: center;
 }
 
 #content_container {
-    display: -webkit-box; /* Safari, iOS Safari */
-    display: -moz-box; /* Firefox */
-    display: -ms-flexbox; /* Internet Explorer */
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box; /* Safari, iOS Safari */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  flex-direction: column;
 
-    -webkit-box-pack: center; /* Safari, iOS Safari */
-    -moz-box-pack: center; /* Firefox */
-    -ms-flex-pack: center; /* Internet Explorer */
-    justify-content: center;
-    -webkit-box-align: center; /* Safari, iOS Safari */
-    -moz-box-align: center; /* Firefox */
-    -ms-flex-align: center; /* Internet Explorer */
-    align-items: center;
+  -webkit-box-pack: center; /* Safari, iOS Safari */
+  -moz-box-pack: center; /* Firefox */
+  -ms-flex-pack: center; /* Internet Explorer */
+  justify-content: center;
+  -webkit-box-align: center; /* Safari, iOS Safari */
+  -moz-box-align: center; /* Firefox */
+  -ms-flex-align: center; /* Internet Explorer */
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 }
 
 #content_container div {
-    height: 10em;
-    width: 70vw;
-    
-    padding: 1em;
-    margin: 2em;
-    
-    border: transparent rgba(255, 255, 255, 0.116) 0.5em;
-    border-radius: 1em;
+  height: 15em;
+  width: 70vw;
 
-    color: white;
-    background-color: rgba(255, 255, 255, 0.116);
+  padding: 1em;
+  margin: 2em;
 
-    font-family: "Great Vibes", cursive;
-    font-weight: 100;
-    font-style: normal;
-    font-size: x-large;
+  border: transparent rgba(255, 255, 255, 0.116) 0.5em;
+  border-radius: 1em;
 
-    -webkit-filter: drop-shadow(0px 0px 14px #000000); /* Safari, iOS Safari */
-    filter: drop-shadow(0px 0px 14px #000000);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.116);
+
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1vw;
+  word-wrap: normal;
+
+  -webkit-filter: drop-shadow(0px 0px 14px #000000); /* Safari, iOS Safari */
+  filter: drop-shadow(0px 0px 14px #000000);
 }
 
 @media screen and (max-width: 900px) {
-    #content_container {
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+  #content_container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-    #content_container div {
-        height: 40%;
-        width: 80vw;
-    }
+  #content_container div {
+    height: 30%;
+    width: 80vw;
+
+    font-size: 0.5em;
+  }
 }
 
 #ticket_box a {
-    transition: all ease-in-out 5s;
+  transition: all ease-in-out 5s;
 }
 
 #ticket_box a :hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* #page3 {
@@ -143,25 +169,25 @@ body::-webkit-scrollbar {
 } */
 
 #contact_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #contact_container div {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
 
-    padding: 1em;
+  padding: 1em;
 }
 
 #contact_us_banner {
-    font-family: "Great Vibes", cursive;
-    font-size: xx-large;
+  font-family: "Great Vibes", cursive;
+  font-size: xx-large;
 }
 
 #contact_details {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
